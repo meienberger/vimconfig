@@ -115,6 +115,21 @@ require("nvim-tree").setup({
       },
     },
     icons = {
+      web_devicons = {
+        folder = {
+          enable = false,
+          color = true,
+        },
+      },
+      show = {
+        file = true,
+        folder = true,
+        folder_arrow = true,
+        git = true,
+        modified = true,
+        diagnostics = true,
+        bookmarks = true,
+      },
       git_placement = "before",
       padding = " ",
       symlink_arrow = " ➛ ",
@@ -267,3 +282,13 @@ require("nvim-web-devicons").set_icon({
     name = "Zsh",
   },
 })
+
+local alpha = function()
+  return string.format("%x", math.floor(255 * vim.g.neovide_transparency_point or 0.8))
+end
+-- Set transparency and background color (title bar color)
+vim.g.neovide_transparency = 0.0
+vim.g.neovide_transparency_point = 0.9
+vim.g.neovide_background_color = "#0f1117" .. alpha()
+
+vim.g.neovide_window_blurred = true
