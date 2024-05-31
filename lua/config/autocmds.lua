@@ -283,12 +283,6 @@ require("nvim-web-devicons").set_icon({
   },
 })
 
-local alpha = function()
-  return string.format("%x", math.floor(255 * vim.g.neovide_transparency_point or 0.8))
-end
--- Set transparency and background color (title bar color)
-vim.g.neovide_transparency = 0.0
-vim.g.neovide_transparency_point = 0.9
-vim.g.neovide_background_color = "#0f1117" .. alpha()
-
-vim.g.neovide_window_blurred = true
+-- next line runs this command: highlight NvimTreeFolderIcon guifg=#6d8086
+vim.cmd("highlight NvimTreeFolderIcon guifg=#fef65b")
+-- vim.cmd("highlight NvimTreeFolderName guifg=#fff27a")
