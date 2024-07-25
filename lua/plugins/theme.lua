@@ -27,9 +27,12 @@ return {
     },
   },
   {
+    "Mofiqul/dracula.nvim",
+  },
+  {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "cyberdream",
+      colorscheme = "dracula",
     },
   },
 }
