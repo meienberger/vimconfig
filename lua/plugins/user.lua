@@ -18,11 +18,18 @@ return {
   },
   {
     "jwalton512/vim-blade",
+    event = "VeryLazy",
   },
   {
     "folke/todo-comments.nvim",
     keys = {
       { "<leader>st", false },
     },
+  },
+  {
+    "m4xshen/hardtime.nvim",
+    event = "VeryLazy",
+    dependencies = { "MunifTanjim/nui.nvim", "nvim-lua/plenary.nvim" },
+    opts = {},
   },
 }
