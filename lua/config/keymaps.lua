@@ -4,6 +4,7 @@
 --
 --
 -- Delete default keymaps
+vim.keymap.del("n", "<leader>l")
 
 local mini_comment = require("mini.comment")
 mini_comment.setup({
