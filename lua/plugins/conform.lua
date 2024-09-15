@@ -26,7 +26,7 @@ local function biome_lsp_or_prettier()
   end
 
   -- Don't format
-  return {}
+  return { "jsonls" }
 end
 
 return {
@@ -50,6 +50,8 @@ return {
         css = biome_lsp_or_prettier,
         html = biome_lsp_or_prettier,
         vue = biome_lsp_or_prettier,
+        json = biome_lsp_or_prettier,
+        markdown = biome_lsp_or_prettier,
       },
     }
     return opts

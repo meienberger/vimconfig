@@ -32,4 +32,7 @@ return {
     dependencies = { "MunifTanjim/nui.nvim", "nvim-lua/plenary.nvim" },
     opts = {},
   },
+  {
+    "brenoprata10/nvim-highlight-colors",
+  },
 }
