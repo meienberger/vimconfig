@@ -63,8 +63,7 @@ return {
             "css",
           },
           root_dir = get_biome_root_dir,
-          single_file_support = true,
-          settings = {},
+          single_file_support = false,
         },
         tsserver = {
           root_dir = get_root_dir,

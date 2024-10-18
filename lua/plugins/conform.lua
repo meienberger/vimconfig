@@ -22,7 +22,7 @@ local function biome_lsp_or_prettier()
   end
 
   if has_biome then
-    return { "biome" }
+    return { "biome-check" }
   end
 
   -- Don't format
